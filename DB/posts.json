@@ -1,0 +1,528 @@
+[{
+  "_id": {
+    "$oid": "633f1744f607515271607d3f"
+  },
+  "title": "My birthday",
+  "author": {
+    "_id": {
+      "$oid": "63305ad04d6aa4be8815be78"
+    },
+    "firstName": "Amelia",
+    "lastName": "Smith"
+  },
+  "category": [
+    "birthday",
+    "celebration"
+  ],
+  "body": "Happy birthday to me!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665079108548"
+    }
+  },
+  "comments": [
+    "63403a89fd7a2177c2864159",
+    "6341ae228f047cec82c7e67b"
+  ],
+  "likes": [
+    "6341afd8041ea325b07962fb"
+  ]
+},{
+  "_id": {
+    "$oid": "633f2031b00aa62bcbad601f"
+  },
+  "title": "Italy",
+  "author": {
+    "_id": {
+      "$oid": "63305c214d6aa4be8815be79"
+    },
+    "firstName": "Sophia",
+    "lastName": "Johnson"
+  },
+  "category": [
+    "Travel",
+    "Italy",
+    "Holiday"
+  ],
+  "body": "Venice is my favourite city now!\nItaly<3",
+  "date": {
+    "$date": {
+      "$numberLong": "1665081393273"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "63419f86aa66e7707e512a17"
+  ]
+},{
+  "_id": {
+    "$oid": "63403fb738737f9df716bf9f"
+  },
+  "title": "Graduation",
+  "author": {
+    "_id": {
+      "$oid": "63307f664d6aa4be8815be86"
+    },
+    "firstName": "Sebastian",
+    "lastName": "Carter"
+  },
+  "category": [
+    "school",
+    "graduation"
+  ],
+  "body": "I finally graduated the school. Hooray!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665154999702"
+    }
+  },
+  "comments": [
+    "6341af1d1146ac38b342da5f"
+  ],
+  "likes": [
+    "6341adfd8f047cec82c7e67a",
+    "6341af0e1146ac38b342da5e"
+  ]
+},{
+  "_id": {
+    "$oid": "6341684b7459571ce7fc51df"
+  },
+  "title": "Friday football match results",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "Germany",
+    "Sweden"
+  ],
+  "body": "Germany 1:1 Sweden",
+  "date": {
+    "$date": {
+      "$numberLong": "1665230923138"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "634187a82020081beaca3d5f"
+  ]
+},{
+  "_id": {
+    "$oid": "6341ad998f047cec82c7e677"
+  },
+  "title": "Saturday football match results",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "Greece",
+    "Austria"
+  ],
+  "body": "Greece 2:3 Austria",
+  "date": {
+    "$date": {
+      "$numberLong": "1665248665070"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341adc58f047cec82c7e678"
+  },
+  "title": "Saturday football match results 2",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "Poland",
+    "Australia"
+  ],
+  "body": "Poland 2:1 Australia",
+  "date": {
+    "$date": {
+      "$numberLong": "1665248709863"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b19ed1190824fac24892"
+  ]
+},{
+  "_id": {
+    "$oid": "6341adef8f047cec82c7e679"
+  },
+  "title": "Monday football match results",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "France",
+    "England"
+  ],
+  "body": "France 1:2 England",
+  "date": {
+    "$date": {
+      "$numberLong": "1665248751192"
+    }
+  },
+  "comments": [
+    "6341afd0041ea325b07962fa"
+  ],
+  "likes": [
+    "6341afb0041ea325b07962f9",
+    "6341b25d096a8eb1803cc98e"
+  ]
+},{
+  "_id": {
+    "$oid": "6341af021146ac38b342da5d"
+  },
+  "title": "Recipe ideas",
+  "author": {
+    "_id": {
+      "$oid": "63307f5c4d6aa4be8815be85"
+    },
+    "firstName": "Leah",
+    "lastName": "Allen"
+  },
+  "category": [
+    "Dessert",
+    "cake",
+    "recipe"
+  ],
+  "body": "I want to bake a cake for my daughter’s birthday. Anyone can recommend a good recipe?",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249026972"
+    }
+  },
+  "comments": [
+    "6341b0835e100a2005adafd7"
+  ],
+  "likes": [
+    "6341b0735e100a2005adafd6"
+  ]
+},{
+  "_id": {
+    "$oid": "6341af741146ac38b342da60"
+  },
+  "title": "Cake",
+  "author": {
+    "_id": {
+      "$oid": "63307f5c4d6aa4be8815be85"
+    },
+    "firstName": "Leah",
+    "lastName": "Allen"
+  },
+  "category": [
+    "Cake",
+    "recipe"
+  ],
+  "body": "I tried to bake napoleon today. It came out delicious!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249140454"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341afa8041ea325b07962f8",
+    "6341b19ad1190824fac24891"
+  ]
+},{
+  "_id": {
+    "$oid": "6341b037124b2dfe6d240b91"
+  },
+  "title": "Lost dog",
+  "author": {
+    "_id": {
+      "$oid": "63307f3b4d6aa4be8815be82"
+    },
+    "firstName": "Peter",
+    "lastName": "Hall"
+  },
+  "category": [
+    "Lost dog",
+    "reward"
+  ],
+  "body": "We have lost our dog. His name is Shery. 2 years, male. Last seen in Green Park. 500 euro reward for safe return.",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249335465"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b06e5e100a2005adafd5"
+  ]
+},{
+  "_id": {
+    "$oid": "6341b0aa5e100a2005adafd8"
+  },
+  "title": "Italy",
+  "author": {
+    "_id": {
+      "$oid": "63305c214d6aa4be8815be79"
+    },
+    "firstName": "Sophia",
+    "lastName": "Johnson"
+  },
+  "category": [
+    "Travel",
+    "Italy"
+  ],
+  "body": "After visiting Venice, I spent 3 days in Rome.",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249450027"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b125ff11a8aceff1e948"
+  },
+  "title": "Free kittens",
+  "author": {
+    "_id": {
+      "$oid": "63307bc84d6aa4be8815be7c"
+    },
+    "firstName": "Mila",
+    "lastName": "Wilson"
+  },
+  "category": [
+    "Kittens"
+  ],
+  "body": "Two stray kittens are open for adoption. For more information call +098 000 111 222.",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249573397"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b197d1190824fac24890"
+  ]
+},{
+  "_id": {
+    "$oid": "6341b18cd1190824fac2488f"
+  },
+  "title": "My new kitten",
+  "author": {
+    "_id": {
+      "$oid": "63307baf4d6aa4be8815be7a"
+    },
+    "firstName": "Oliver",
+    "lastName": "Moore"
+  },
+  "category": [
+    "Kitten",
+    "Cat",
+    "Animal"
+  ],
+  "body": "We adopted a new kitten yesterday. Her name is Luna!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249676798"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b1e344096535bc361226"
+  },
+  "title": "Writing contest",
+  "author": {
+    "_id": {
+      "$oid": "63307f454d6aa4be8815be83"
+    },
+    "firstName": "Theo",
+    "lastName": "Robinson"
+  },
+  "category": [
+    "Contest",
+    "Library"
+  ],
+  "body": "Writing contest will be held in the local library this Friday.",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249763072"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b20244096535bc361227"
+  },
+  "title": "Writing contest winners",
+  "author": {
+    "_id": {
+      "$oid": "63307f454d6aa4be8815be83"
+    },
+    "firstName": "Theo",
+    "lastName": "Robinson"
+  },
+  "category": [
+    "Contest",
+    "Library"
+  ],
+  "body": "This people won the writing contest:\r\n1.Isla Torres\r\n2.John Green\r\n3.Pam Hunter\r\nCongratulations!\r\n",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249794536"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b22f096a8eb1803cc98c"
+  ]
+},{
+  "_id": {
+    "$oid": "6341b256096a8eb1803cc98d"
+  },
+  "title": "Writing contest",
+  "author": {
+    "_id": {
+      "$oid": "63307f504d6aa4be8815be84"
+    },
+    "firstName": "Isla",
+    "lastName": "Torres"
+  },
+  "category": [
+    "Contest",
+    "Library"
+  ],
+  "body": "I won the writing contest yesterday! Thank you to the local library for organizing the contest!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249878537"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b2aa653aa52d53fe7d37"
+  },
+  "title": "Tuesday football match results ",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "Estonia",
+    "Ireland"
+  ],
+  "body": "Estonia 2:0 Ireland",
+  "date": {
+    "$date": {
+      "$numberLong": "1665249962530"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b2d7653aa52d53fe7d38"
+  },
+  "title": "Wednesday football match results",
+  "author": {
+    "_id": {
+      "$oid": "63307bbe4d6aa4be8815be7b"
+    },
+    "firstName": "Leo",
+    "lastName": "White"
+  },
+  "category": [
+    "Football",
+    "Brazil",
+    "Norway"
+  ],
+  "body": "Brazil 3:1 Norway",
+  "date": {
+    "$date": {
+      "$numberLong": "1665250007522"
+    }
+  },
+  "comments": [],
+  "likes": []
+},{
+  "_id": {
+    "$oid": "6341b39adf6d6a44972e8d8c"
+  },
+  "title": "Returning from Italy",
+  "author": {
+    "_id": {
+      "$oid": "63305c214d6aa4be8815be79"
+    },
+    "firstName": "Sophia",
+    "lastName": "Johnson"
+  },
+  "category": [
+    "Travel",
+    "Italy",
+    "Home"
+  ],
+  "body": "After 2 weeks in Italy I finally return home.",
+  "date": {
+    "$date": {
+      "$numberLong": "1665250202261"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b3f8733a8b8aa7793b7e"
+  ]
+},{
+  "_id": {
+    "$oid": "6341b3e4733a8b8aa7793b7d"
+  },
+  "title": "Found dog",
+  "author": {
+    "_id": {
+      "$oid": "63307f664d6aa4be8815be86"
+    },
+    "firstName": "Sebastian",
+    "lastName": "Carter"
+  },
+  "category": [
+    "Lost dog",
+    "found dog"
+  ],
+  "body": "We found a dog on Maple Str. Today. Brown male with white patch on his chest. Help us find his owners!",
+  "date": {
+    "$date": {
+      "$numberLong": "1665250276429"
+    }
+  },
+  "comments": [],
+  "likes": [
+    "6341b4d7aa549e0837ab5b5a"
+  ]
+}]
