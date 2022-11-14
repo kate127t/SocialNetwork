@@ -36,5 +36,10 @@ namespace WindowsForms_SN
             post.Comments.Add(comment.Id);
             postDAL.update(post);
         }
+
+        private void AddComment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

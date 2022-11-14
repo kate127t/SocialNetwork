@@ -70,6 +70,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddComment";
             this.Text = "AddComment";
+            this.Load += new System.EventHandler(this.AddComment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
