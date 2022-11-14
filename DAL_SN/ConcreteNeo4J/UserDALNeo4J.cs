@@ -89,7 +89,11 @@ namespace DAL_SN.ConcreteNeo4J
                .ResultsAsync
                .Result;
 
-            return shortestPathCount.ElementAt(0);
+            if(shortestPathCount.Count() != 0)
+            {
+                return shortestPathCount.ElementAt(0);
+            }
+            return 0;
         }
 
         public bool CheckIfFollows(string user1Id, string user2Id)

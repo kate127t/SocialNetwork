@@ -15,7 +15,7 @@ namespace BLL_SN
     {
         IUserDAL userDALmongoDB;
         UserDALNeo4J userDALNeo4J;
-        UsersBLL()
+        public UsersBLL()
         {
             this.userDALmongoDB = new UserDAL();
             this.userDALNeo4J = new UserDALNeo4J();

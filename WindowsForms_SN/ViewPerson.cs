@@ -1,4 +1,5 @@
-﻿using DAL_SN.Concrete;
+﻿using BLL_SN;
+using DAL_SN.Concrete;
 using DAL_SN.Interfaces;
 using Models_SN;
 using System;
@@ -17,6 +18,7 @@ namespace WindowsForms_SN
     {
         IUserDAL userDAL = new UserDAL();
         IPostDAL postDAL = new PostDAL();
+        UsersBLL usersBLL = new UsersBLL();
         User curUser;
         User viewUser;
         public ViewPerson(User curUser,User viewUser)
@@ -29,8 +31,9 @@ namespace WindowsForms_SN
         private void ViewPerson_Load(object sender, EventArgs e)
         {
             labelUserName.Text = viewUser.FirstName + " " + viewUser.LastName;
-            labelFollowers.Text = viewUser.followersCounter().ToString() + " " + "Followers";
-            labelFollowing.Text = viewUser.followingCounter().ToString() + " " + "Following";
+
+            RefreshRelationshipLabels();
+            
             string interests = "Interests:\n";
             for (int i = 0; i < viewUser.Interests.Count; i++)
             {
@@ -39,7 +42,21 @@ namespace WindowsForms_SN
             labelInterests.Text = interests;
             tableLayoutPanelRecentPosts.Visible = true;
 
-            if (curUser.Following.Contains(viewUser.Id))
+            ShowRecentPosts();
+        }
+
+        private void RefreshRelationshipLabels()
+        {
+            int followersCounter = usersBLL.countFollowers(viewUser);
+            int followingCounter = usersBLL.countFollows(viewUser);
+            int shortestPath = usersBLL.countShortestPath(curUser, viewUser);
+            bool follows = usersBLL.CheckIfFollows(curUser, viewUser);
+
+            labelFollowers.Text = followersCounter.ToString() + " " + "Followers";
+            labelFollowing.Text = followingCounter.ToString() + " " + "Following";
+            labelShortestPath.Text = "Shortest path: " + shortestPath.ToString();
+
+            if (follows)
             {
                 buttonFollow.Text = "Unfollow";
             }
@@ -47,7 +64,6 @@ namespace WindowsForms_SN
             {
                 buttonFollow.Text = "Follow";
             }
-            ShowRecentPosts();
         }
         private void ShowRecentPosts()
         {
@@ -67,21 +83,17 @@ namespace WindowsForms_SN
 
         private void buttonFollow_Click(object sender, EventArgs e)
         {
-            if (curUser.Following.Contains(viewUser.Id))
+            bool follows = usersBLL.CheckIfFollows(curUser, viewUser);
+
+            if (follows)
             {
-                curUser.Following.Remove(viewUser.Id);
-                viewUser.Followers.Remove(curUser.Id);
-                buttonFollow.Text = "Follow";
+                usersBLL.unfollow(curUser, viewUser);
             }
             else
             {
-                curUser.Following.Add(viewUser.Id);
-                viewUser.Followers.Add(curUser.Id);
-                buttonFollow.Text = "Unfollow";
+                usersBLL.follow(curUser, viewUser);
             }
-            userDAL.update(curUser);
-            userDAL.update(viewUser);
-            labelFollowers.Text = viewUser.followersCounter().ToString() + " " + "Followers";
+            RefreshRelationshipLabels();
         }
     }
 }

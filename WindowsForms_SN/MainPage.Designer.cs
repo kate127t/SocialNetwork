@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.buttonSearchPerson = new System.Windows.Forms.Button();
+            this.labelInterests = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.labelFollowing = new System.Windows.Forms.Label();
@@ -36,8 +38,6 @@
             this.buttonWritePost = new System.Windows.Forms.Button();
             this.labelUserName = new System.Windows.Forms.Label();
             this.tableLayoutPanelRecentPosts = new System.Windows.Forms.TableLayoutPanel();
-            this.labelInterests = new System.Windows.Forms.Label();
-            this.buttonSearchPerson = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -67,6 +67,24 @@
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
             this.splitContainer1.SplitterDistance = 266;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // buttonSearchPerson
+            // 
+            this.buttonSearchPerson.Location = new System.Drawing.Point(16, 412);
+            this.buttonSearchPerson.Name = "buttonSearchPerson";
+            this.buttonSearchPerson.Size = new System.Drawing.Size(75, 23);
+            this.buttonSearchPerson.TabIndex = 8;
+            this.buttonSearchPerson.Text = "Search";
+            this.buttonSearchPerson.UseVisualStyleBackColor = true;
+            this.buttonSearchPerson.Click += new System.EventHandler(this.buttonSearchPerson_Click);
+            // 
+            // labelInterests
+            // 
+            this.labelInterests.Location = new System.Drawing.Point(12, 90);
+            this.labelInterests.Name = "labelInterests";
+            this.labelInterests.Size = new System.Drawing.Size(240, 98);
+            this.labelInterests.TabIndex = 7;
+            this.labelInterests.Text = "Interests";
             // 
             // label1
             // 
@@ -143,24 +161,6 @@
             this.tableLayoutPanelRecentPosts.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanelRecentPosts.Size = new System.Drawing.Size(524, 447);
             this.tableLayoutPanelRecentPosts.TabIndex = 2;
-            // 
-            // labelInterests
-            // 
-            this.labelInterests.Location = new System.Drawing.Point(13, 83);
-            this.labelInterests.Name = "labelInterests";
-            this.labelInterests.Size = new System.Drawing.Size(240, 98);
-            this.labelInterests.TabIndex = 7;
-            this.labelInterests.Text = "Interests";
-            // 
-            // buttonSearchPerson
-            // 
-            this.buttonSearchPerson.Location = new System.Drawing.Point(16, 412);
-            this.buttonSearchPerson.Name = "buttonSearchPerson";
-            this.buttonSearchPerson.Size = new System.Drawing.Size(75, 23);
-            this.buttonSearchPerson.TabIndex = 8;
-            this.buttonSearchPerson.Text = "Search";
-            this.buttonSearchPerson.UseVisualStyleBackColor = true;
-            this.buttonSearchPerson.Click += new System.EventHandler(this.buttonSearchPerson_Click);
             // 
             // MainPage
             // 

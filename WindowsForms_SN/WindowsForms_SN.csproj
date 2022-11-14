@@ -141,6 +141,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL_SN\BLL_SN.csproj">
+      <Project>{3C4BF438-AF6E-43F4-BF9D-198CA98C2E99}</Project>
+      <Name>BLL_SN</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL_SN\DAL_SN.csproj">
       <Project>{9482c6ea-5458-4935-8a5f-65579914ceaf}</Project>
       <Name>DAL_SN</Name>

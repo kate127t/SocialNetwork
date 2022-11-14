@@ -1,4 +1,5 @@
-﻿using DAL_SN.Concrete;
+﻿using BLL_SN;
+using DAL_SN.Concrete;
 using DAL_SN.Interfaces;
 using Models_SN;
 using System;
@@ -16,6 +17,7 @@ namespace WindowsForms_SN
     public partial class CreateNewAccount : Form
     {
         IUserDAL userDAL = new UserDAL();
+        UsersBLL usersBLL = new UsersBLL();
         public CreateNewAccount()
         {
             InitializeComponent();
@@ -33,7 +35,7 @@ namespace WindowsForms_SN
             user.Following = new List<string>();
             user.Posts = new List<string>();
 
-            userDAL.create(user);
+            usersBLL.create(user);
 
             this.Close();
         }

@@ -1,4 +1,5 @@
-﻿using DAL_SN.Concrete;
+﻿using BLL_SN;
+using DAL_SN.Concrete;
 using DAL_SN.Interfaces;
 using Models_SN;
 using System;
@@ -18,11 +19,13 @@ namespace WindowsForms_SN
         User user;
         IUserDAL userDAL;
         IPostDAL postDAL;
+        UsersBLL usersBLL;
         public MainPage(User user)
         {
             this.user = user;
             this.userDAL = new UserDAL();
             this.postDAL = new PostDAL();
+            this.usersBLL = new UsersBLL();
             //PostUC postUC = new PostUC();
             InitializeComponent();
         }
@@ -40,6 +43,16 @@ namespace WindowsForms_SN
             labelInterests.Text = interests;
             ShowRecentPosts();
 
+        }
+
+        private void RefreshRelashionshipLabels()
+        {
+            int followersCounter = usersBLL.countFollowers(user);
+            int followingCounter = usersBLL.countFollows(user);
+            
+
+            labelFollowers.Text = followersCounter.ToString() + " " + "Followers";
+            labelFollowing.Text = followingCounter.ToString() + " " + "Following";
         }
 
         private void buttonWritePost_Click(object sender, EventArgs e)
@@ -77,7 +90,7 @@ namespace WindowsForms_SN
             User viewUser = userDAL.read("email", textBoxSearch.Text);
             ViewPerson vp = new ViewPerson(user, viewUser);
             vp.ShowDialog();
-            vp.FormClosed += (s, args) => this.labelFollowing.Text = user.followingCounter().ToString() + " " + "Following";
+            RefreshRelashionshipLabels();
         }
     }
 }
